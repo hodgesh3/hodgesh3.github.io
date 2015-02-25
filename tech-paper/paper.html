@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <img src="img/header.png"/ id="header">
+        <img src="img/netflix1.jpg"/>
+		<p>Netflix is the highly popular Internet television network with 33 million members in 40 countries enjoying the content they provide. They have a quite sizable stack of technology that their service is built on and they will be highlighted here.</p>
+		<h3>Node.js:</h3> <p>This platform is a server-side version of JavaScript used for building fast & scalable network applications. Netflix is this technology for its web application, moving away from Java. They use this technology due to its scalability, as previously stated, and hope it will allow them to serve up pages more quickly to customers. In addition to this, Node.js allows for increased productivity, as the developers are used to working with JavaScript, allowing for an easy, natural transition.</p>
+		<h3>MySQL:</h3> <p>While Netflix started off using a MySQL database for their data, scalability became an issue when they switched over to online streaming and the customer base began increasing, in addition to all the data from previous/current customers. This is when they moved away from this database technology to another one…</p>
+		<h3>Cassandra:</h3> <p>This is a NoSQL open source database, built with Apache by Facebook. which has high scalability across multiple, world-wide data centers. They decided to move to the cloud to solve their scalability issues and save a lot of money, as cloud storage is much cheaper than data warehouses. Netflix chose Cassandra for this due to its scalability and the fact that it is optimal for random read/writes, which allows for queries to be made in real time and is ideal for individual ones. Netflix has made a “bulk data pipeline” with Cassandra, stored on AWS (S3) daily, S3 is used because Netflix likes its durability.  
+		<h3>AWS (EC2, RDS, SES, DynamoDB):</h3> <p>Netflix delivers its services from Amazon Web Services public cloud, as they have a scalable pay-as-you go model, and they are one of the few that can actually store Netflix’s content. Netflix had some problems when they heard AWS was going to reboot their servers in order to implement a bug fix. This made them highly concerned about their 2700 Cassandra databases hosted on AWS’ servers going down, which would cause disruption of their services for a significant amount of time, angering a lot of customers. Netflix managed to avoid this, as Cassandra databases could be spread over multiple servers, so if one of Amazon’s servers went down, the service would still run on another one. They tested this a tool called Chaos Monkey, which was designed to kill Netflix services. Thanks to these tests, 218 of Netflix’s Cassandra nodes were rebooted, and only 22 didn’t return to full functionality, although they were brought back up rather easily and they experience no downtime due to the reboot.</p> 
+		<h3>React:</h3> <p>This is a JavaScript UI library that Netflix is using to redesign their user interface. They chose React due to its ability to reduce initial load time and increase startup speeds in rendering their UI. It does this by allowing isomorphic JavaScript, which enables JavaScript UI code to run both server and client side. In addition to this they wanted to increase the performance and responsiveness, as some hardware cannot handle expensive operations as far as system resources go (i.e. mobile devices vs desktops). React also enables modularity, in that it allows Netflix devs to code features that fit with the current UI, both in code and in use. </p>
+		<h3>Dynomite:</h3> <p>Dynomite is a sharding and replication layer created from Netflix’s experience with Dynamo White Paper and Cassandra. This layer allows non distributed databases to become fully distributed, multi-center datastores. It does this by turning single-server datastores into peer-to-peer clusters while preserving the datastores’ client/server protocols.</p>
+		<h3>GitHub:</h3> <p>Netflix releases a lot of open source software that they have developed throughout the years, and continue to develop as they evolve. They use GitHub for both their development purposes and for releasing their software once it’s developed on the Netflix Open Source Software Center, hosting many internally developed components and libraries. After choosing Cassandra, Netflix had to develop and optimize it to work on AWS by creating and adding various fixes and extensions to it. This led to them seeing that they could benefit from releasing their own projects, leading them to create their account on GitHub.</p> 
+		<h3>Jenkins:</h3> <p>Netflix uses Jenkins, an open source continuous integration tool, to monitor and test Cassandra clusters, automate integration tests, production and deployment, and for its various housekeeping purposes.</p> 
+		<h3>Boundary:</h3> <p>Boundary’s tool for real-time virtual monitoring allows Netflix to have deep visibility into AWS. It provides real-time metrics on individual node performance, which can be collected and used to see a company like Netflix’s network flow. Since companies lose visibility when they move their infrastructure to a 3rd party, like Netflix with AWS, they give up visibility of the infrastructure. This tool helps Netflix from being blind, and allows them to monitor their network for issues. Prior to this service, it could take up to an hour to be notified of an issue, which makes Boundary extremely valuable to companies like Netflix.</p> 
+		<h3>Apache Mesos:</h3> <p>Mesos is a cluster manager that simplifies running applications on group of servers. This is obviously highly beneficial to Netflix, as this is exactly how their service is run, as stated earlier with their use of Cassandra. This service gives Netflix resource granularity and reduces startup latency, going from starting up an instance in a time of minutes vs using Mesos to do the same in under a second. Mesos essentially allows sharing resources between applications, which is much more efficient and increases throughput and utilization.</p> 
+	
+		<h2>Resources</h2> 
+		<p id="resources">http://stackshare.io/netflix/netflix<br />
+		http://opensource.com/business/14/8/interview-chris-aniszczyk-twitter-apache-mesos<br />
+		http://thenextweb.com/insider/2014/07/03/cloud-9-boundarys-cloud-monitoring-tool-helps-keep-netflix-running/<br />
+		http://www.slideshare.net/spodila/aws-reinvent-2014-talk-scheduling-using-apache-mesos-in-the-cloud<br />
+		http://techblog.netflix.com/2012/07/open-source-at-netflix-by-ruslan.html<br />
+		http://www.slideshare.net/garethbowles/building-netflixstreamingwithjenkins-juc<br />
+		http://techblog.netflix.com/2014/11/introducing-dynomite.html<br />
+		http://www.infoq.com/news/2014/10/netflix-cassandra<br />
+		http://techblog.netflix.com/2015/01/netflix-likes-react.html<br />
+		http://techblog.netflix.com/2014/10/a-state-of-xen-chaos-monkey-cassandra.html<br />
+		http://techblog.netflix.com/2014/06/announcing-security-monkey-aws-security.html<br />
+		http://www.infoworld.com/article/2610110/javascript/paypal-and-netflix-cozy-up-to-node-js.html<br />
+		http://techblog.netflix.com/2015/02/nicobar-dynamic-scripting-library-for.html<br />
+		http://techblog.netflix.com/2014/11/prana-sidecar-for-your-netflix-paas.html<br />
+		http://techblog.netflix.com/2014/11/nodejs-in-flames.html<br />
+		http://www.pcworld.com/article/2691772/how-netflix-survived-the-amazon-ec2-reboot.html<br />
+		http://dataconomy.com/netflix-big-data-architecture/</p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        
+       
+
+
+    </body>
+</html>
