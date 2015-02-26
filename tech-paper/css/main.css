@@ -101,6 +101,7 @@ body{
 	background:#B9090B;
 	color:white;
 	max-width:940px;
+	min-width:640px;
 	width:80%;
 	margin-right:auto;
 	margin-left:auto;
