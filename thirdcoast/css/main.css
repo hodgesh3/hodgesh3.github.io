@@ -260,6 +260,12 @@ body{
 	}
 #markup .bio{
 	}
+#markup .new-patients{
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:20px;
+	clear:both;
+	}
 @media screen and (max-width: 540px) {
 	
 	#markup{
