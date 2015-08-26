@@ -103,20 +103,19 @@ body{
   margin-bottom:30px;
   background-color:#ffffff;
 }
-
+header{
+	
+	}
 .head{
 	height:auto;
 	width:auto;
 	max-width:960px;
 	max-height:320px;
 	position: fixed;
-	top: 0;
-	left: 0;
-	left: 0;
-    right: 0;
-    margin: 0 auto;
+    margin: auto;
 	background-color:#FFF;
 }
+
 .head nav{
 	text-align:center;
 }
