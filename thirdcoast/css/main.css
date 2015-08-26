@@ -263,6 +263,9 @@ header{
 	width:80%;
 	overflow:hidden;
 	}
+#markup .about{
+	text-align:left;
+	}
 #markup .bio{
 	margin-left:10%;
 	margin-right:10%;
