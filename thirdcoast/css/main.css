@@ -143,6 +143,7 @@ header{
   font-size: 1.2em;
   text-align: center;
   background:#b51132;
+  border-bottom:1px solid black;
 }
 
 .head .nav a {
