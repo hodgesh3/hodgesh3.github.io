@@ -265,6 +265,20 @@ header{
 	margin-top:20px;
 	clear:both;
 	}
+#markup table{
+	width:80%;
+	margin:auto;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:15px;
+	margin-bottom:50px;
+	}
+#markup table, tr, td, th{
+	border:2px solid #000;
+	}
+#markup table tr td{
+	padding-left:5px;
+	}
 @media screen and (max-width: 540px) {
 	
 	#markup{
