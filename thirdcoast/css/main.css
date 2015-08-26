@@ -150,7 +150,6 @@ header{
   color: #dbe0ee;
   display: block;
   padding-left: 15px;
-  border-bottom: 1px solid #888;
 }
 
 .head .nav a:hover {
@@ -226,6 +225,9 @@ header{
 	float:right;
 	display:inline-block;
 	}
+#markup .img-holder{
+	margin-right:10%;
+	}
 #markup .img-holder img{
 	width:100%;
 	height:auto;
@@ -241,29 +243,41 @@ header{
 	margin:0;
 	text-indent:20px;
 	}
-#markup ul{
-	margin-left:20px;
-	margin-right:20px;
+#markup .intro{
+	margin-left:10%;
+	margin-right:10%;
+	}
+#markup .list{
+	margin-left:10%;
+	margin-right:10%;
 	padding:0;
 	}
 #markup .img-holder2{
 	float:left;
 	width:30%;
 	display:inline-block;
-	padding-left:20px;
+	margin-left:10%;
+	padding-bottom:20px;
 	}
 #markup .img-holder2 img{
 	width:80%;
 	overflow:hidden;
-	padding
 	}
 #markup .bio{
+	margin-left:10%;
+	margin-right:10%;
 	}
-#markup .new-patients{
-	margin-left:20px;
-	margin-right:20px;
+#markup .new-patients p{
+	margin-left:10%;
+	margin-right:10%;
 	margin-top:20px;
 	clear:both;
+	}
+#markup .new-patients h2{
+	margin-left:10%;
+	}
+#markup .insurance h2{
+	margin-left:10%;	
 	}
 #markup table{
 	width:80%;
