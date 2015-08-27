@@ -146,17 +146,18 @@ header{
 		background: linear-gradient(to bottom,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#910010', endColorstr='#cc3d4b',GradientType=0 ); /* IE6-9 */
 	width:20%;
+	min-width:155px;
 	margin-right:5%;
+	margin-left:5%;
 	float:right;
 	padding:10px;
 	border-bottom-left-radius:25px;
 	border-bottom-right-radius:25px;
+	text-align:center;
 	}
 .head .portal-link a{
 	font-weight:bold;
-	width:80%;
-	padding-right:10%;
-	padding-left:10%;
+	font-size:24px;
 	color:#dbe0ee;
 	text-decoration:none;
 	text-align:center;
