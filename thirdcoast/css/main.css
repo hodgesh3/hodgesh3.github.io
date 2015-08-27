@@ -156,6 +156,7 @@ header{
 	text-align:center;
 	}
 .head .portal-link a{
+	display:block;
 	font-weight:bold;
 	font-size:24px;
 	color:#dbe0ee;
