@@ -154,9 +154,8 @@ header{
 	}
 .head .portal-link a{
 	font-weight:bold;
-	font-size:24px;
-	padding-right:12px;
-	padding-left:12px;
+	padding-right:5%;
+	padding-left:5%;
 	color:#dbe0ee;
 	text-decoration:none;
 }
