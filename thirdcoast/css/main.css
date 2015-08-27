@@ -154,12 +154,12 @@ header{
 	}
 .head .portal-link a{
 	font-weight:bold;
-	padding-right:5%;
-	padding-left:5%;
+	width:80%;
+	padding-right:10%;
+	padding-left:10%;
 	color:#dbe0ee;
 	text-decoration:none;
 	text-align:center;
-	width:80%;
 }
 
 .head .nav ul {
