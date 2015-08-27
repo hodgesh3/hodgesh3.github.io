@@ -14,7 +14,14 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-	background-color:#005294;
+	background: #f6e6b4; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #f6e6b4 0%, #eaab5d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f6e6b4), color-stop(100%,#eaab5d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #f6e6b4 0%,#eaab5d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #f6e6b4 0%,#eaab5d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #f6e6b4 0%,#eaab5d 100%); /* IE10+ */
+	background: linear-gradient(135deg, #f6e6b4 0%,#eaab5d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#eaab5d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 /*
@@ -128,6 +135,31 @@ header{
 		padding-top:15px;
 		padding-bottom:15px;
 	  }
+.head .portal-link{
+	display:block;
+	background: #910010; /* Old browsers */
+		background: -moz-linear-gradient(top,  #910010 0%, #a50013 0%, #ad0a1d 18%, #af2838 47%, #cc3d4b 99%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#910010), color-stop(0%,#a50013), color-stop(18%,#ad0a1d), color-stop(47%,#af2838), color-stop(99%,#cc3d4b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* IE10+ */
+		background: linear-gradient(to bottom,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#910010', endColorstr='#cc3d4b',GradientType=0 ); /* IE6-9 */
+	width:20%;
+	margin-right:5%;
+	float:right;
+	padding:10px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+	}
+.head .portal-link a{
+	font-weight:bold;
+	font-size:24px;
+	padding-right:12px;
+	padding-left:12px;
+	color:#dbe0ee;
+	text-decoration:none;
+}
 
 .head .nav ul {
   width:100%;
@@ -142,8 +174,16 @@ header{
 .head .nav li {
   font-size: 1.2em;
   text-align: center;
-  background:#b51132;
   border-bottom:1px solid black;
+  background-color: #FF9EB5;
+  /* For WebKit (Safari, Chrome, etc) */
+  background: #FF9EB5 -webkit-gradient(linear, left top, left bottom, from(#9D0328), to(#FF9EB5)) no-repeat;
+  /* Mozilla,Firefox/Gecko */
+  background: #FF9EB5 -moz-linear-gradient(top, #9D0328, #FF9EB5) no-repeat;
+  /* IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#9D0328, endColorstr=#FF9EB5) no-repeat;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#9D0328, endColorstr=#9D0328)" no-repeat;
 }
 
 .head .nav a {
@@ -154,11 +194,27 @@ header{
 }
 
 .head .nav a:hover {
-  background-color: #005294;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 79%, #2989d8 79%, #2989d8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(79%,#2989d8), color-stop(79%,#2989d8), color-stop(100%,#2989d8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2989d8',GradientType=0 ); /* IE6-9 */
 }
 
 .current{
-	background:#005294;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+79,2989d8+79,2989d8+100 */
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 79%, #2989d8 79%, #2989d8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(79%,#2989d8), color-stop(79%,#2989d8), color-stop(100%,#2989d8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 79%,#2989d8 79%,#2989d8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2989d8',GradientType=0 ); /* IE6-9 */
+
 	}
 
 @media screen and (min-width: 540px) {
@@ -173,13 +229,22 @@ header{
 	.head .nav ul li {
 		padding:0;
 		margin:0;
-		width:20%;
+		width:25%;
 		height:40px;
 		float:left;
 		border-bottom: none;
 		font-size: 1.2em;
 		display: inline-block;
-		background:#b51132;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#910010+0,a50013+0,ad0a1d+18,af2838+47,cc3d4b+99 */
+		background: #910010; /* Old browsers */
+		background: -moz-linear-gradient(top,  #910010 0%, #a50013 0%, #ad0a1d 18%, #af2838 47%, #cc3d4b 99%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#910010), color-stop(0%,#a50013), color-stop(18%,#ad0a1d), color-stop(47%,#af2838), color-stop(99%,#cc3d4b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* IE10+ */
+		background: linear-gradient(to bottom,  #910010 0%,#a50013 0%,#ad0a1d 18%,#af2838 47%,#cc3d4b 99%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#910010', endColorstr='#cc3d4b',GradientType=0 ); /* IE6-9 */
+
 	  }
 	
 	.head .nav a {
@@ -207,62 +272,54 @@ header{
 #markup h1{
 	margin:0;
 	padding:0;
-	color:#005294;
+	color:#7691C0;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-align:left;
 	}
 #markup	h2{ 
 	margin:0;
 	padding:0;
-	color:#005294;
+	color:#7691C0;
 	text-align:left;
 	}
-#markup .img-holder{
-	width:50%;
-	height:auto;
-	margin-right:40px;
-	min-width:190px;
-	float:right;
-	display:inline-block;
-	}
-#markup .img-holder{
-	margin-right:10%;
-	}
-#markup .img-holder img{
-	width:100%;
-	height:auto;
-	margin-left:20px;
-	margin-right:20px;
-	min-width:190px;
-	}
-#markup .img-holder .caption{
-	margin-left:20px;
-	}	
+
 #markup p{
 	padding:0;
 	margin:0;
 	text-indent:20px;
 	}
+#markup .intro-holder{
+
+	}
+#markup .img-holder{
+	float:right;
+	width:40%;
+	margin-top:20px;
+	}
+	
+#markup .img-holder #headshot{
+	width:60%;
+	height:auto;
+	margin-left:20%;
+	margin-right:20%;
+	}
+	
+#markup .caption{
+	margin-left:20%;
+	margin-right:20%;
+	}
+	
 #markup .intro{
 	margin-left:10%;
 	margin-right:10%;
 	}
+	
 #markup .list{
 	margin-left:10%;
 	margin-right:10%;
 	padding:0;
 	}
-#markup .img-holder2{
-	float:left;
-	width:30%;
-	display:inline-block;
-	margin-left:10%;
-	padding-bottom:20px;
-	}
-#markup .img-holder2 img{
-	width:80%;
-	overflow:hidden;
-	}
+
 #markup .about{
 	text-align:left;
 	}
@@ -271,6 +328,9 @@ header{
 	margin-right:10%;
 	text-align:left;
 	}
+#markup .about h2{
+	margin-left:10%;
+	}	
 #markup .new-patients p{
 	margin-left:10%;
 	margin-right:10%;
@@ -292,7 +352,7 @@ header{
 	margin-bottom:50px;
 	}
 #markup table th{
-	color:#005294;
+	color:#7691C0;
 	padding:2px;
 	padding-left:10px;
 	padding-right:10px;
