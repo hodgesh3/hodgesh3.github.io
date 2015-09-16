@@ -261,6 +261,23 @@ body{
 		   width:100%;
 		   display:block;
 		   }
+		.head .nav ul li ul.info-menu{
+		  list-style:none;
+		  min-width:200px;
+		  display:none;
+		  position:absolute;
+		  z-index:999;
+		  left:0;
+		  }
+	   .head .nav ul li:hover ul.info-menu{
+		   width:33.33%;
+		   margin-left:66.66%;
+		   display:block;
+		   }
+	   .head .nav ul ul.info-menu li{
+		   width:100%;
+		   display:block;
+		   }
 	
 	.head .nav a {
 		padding:0;
