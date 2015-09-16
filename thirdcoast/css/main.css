@@ -415,7 +415,7 @@ body{
 	
 	}
 .wrapper .care-sidebar h2{
-	text-align:center;
+	text-align:center;;
 	}
 .wrapper .care-sidebar p{
 	text-align:center;
@@ -432,7 +432,9 @@ body{
 	width:75%;
 	z-index: 0;
 	padding-bottom:15px;
-	
+	}
+.wrapper .care-content h1, h2{
+	color:#7691C0
 	}
 .wrapper .care-content .appointments{
 	width:80%;
