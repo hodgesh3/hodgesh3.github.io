@@ -20,47 +20,68 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header id="nav-menu">
+    
+    <!-- header content -->
+    
       <div class="head">
+      
+        <!-- link to patient portal -->
+      
       	<div class="portal-link">
         	<a href="https://health.eclinicalworks.com/thirdcoastfamily">Patient Portal</a>
         </div>
+        
+        <!-- logo image in the header -->
         <div class="logo-holder">
         	<img src="img/logo.jpg" id="logo" alt="logo" />
         </div>
         
-      	<div class="nav">
+      	<div class="nav"> <!-- navigation bar -->
           <ul>
-            <li class="current">
+            <li class="deselected"> <!-- highligts link when clicked -->
             	<a href="index.html">Home</a>
+                <!-- homepage dropdown on hover menu -->
+                <!-- links lead to homepage if on another part of site -->
                 <ul class="home-menu">
-                	<li><a href="#third-coast">Third Coast</a></li>
-                    <li><a href="#doctor">About Dr. Matheson</a></li>
-                    <li><a href="#patient">Patient Centered</a></li>
-                    <li><a href="#services">Services Provided</a></li>
-                    <li><a href="#insurances">Participating Insurance</a></li>
-                    <li><a href="#options">Payment Options</a></li>
+                	<li><a href="index.html">Third Coast</a></li>
+                    <li><a href="index.html">About Dr. Matheson</a></li>
+                    <li><a href="index.html">Patient Centered</a></li>
+                    <li><a href="index.html">Services Provided</a></li>
+                    <li><a href="index.html">Participating Insurance</a></li>
+                    <li><a href="index.html">Payment Options</a></li>
                 </ul>
             </li>
+            
             <li class="deselected">
             	<a href="care.html">Accessing Care</a>
+                
                 <ul class="care-menu">
                 	<li><a href="care.html">Appointments</a></li>
                     <li><a href="care.html">Prescriptions</a></li>
                     <li><a href="care.html">Urgent Care</a></li>
-                </ul></li>
-            <li class="deselected"><a href="info.html">Information</a></li>
+                </ul>
+                
+            </li>
+            <li class="current"><a href="info.html">Information</a></li>
           </ul>
-  		</div>
-      </div> 
+  		</div> <!-- end nav bar -->
+      </div> <!-- end header --> 
     </header>
+
+    <div class="wrapper"> <!-- sidebar/body formatting purposes -->
     
-    <div class="wrapper">
-		<div class="sidebar">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62936.62734687174!2d-86.3571220687452!3d43.932698227144506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d2621d0a9a13c64!2sThird+Coast+Family+Practice!5e0!3m2!1sen!2sus!4v1442347947135" width="278" height="275" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- sidebar content -->
+    
+		<div class="info-sidebar">
+  <!-- embedded map can edit by changing values below starting with width-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62936.62734687174!2d-86.3571220687452!3d43.932698227144506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d2621d0a9a13c64!2sThird+Coast+Family+Practice!5e0!3m2!1sen!2sus!4v1442347947135" width="278" height="285" frameborder="0" style="border:0" allowfullscreen></iframe>	<!-- end embedded map -->
+            
             <p>821 West US 10 Scottville, MI 49454</p>
             <h2>Emergencies</h2>
             <p>If you have an urgent medical problem after hours or on the weekend, you can page Dr. Matheson by dialing (231) 843-2557. In case of an acute emergency, go to your nearest hospital Emergency Department. For help deciding the urgency of your situation, <a href="#">click here</a>.</p>
-            <br />
+            
+            <br /> <!-- line break for formatting purposes -->
+            
             <h2>Office Hours</h2>
             <p>Mon-Tue 8:15am-5:00pm</p>
             <p>Wed 12:00-7:30pm</p>
@@ -70,10 +91,61 @@
     		<h2>Contact</h2>
             <p><em>Phone</em> (231) 757-2500</p>
             <p><em>Fax</em> (231) 757-9073</p>
-        </div>
+            
+        </div> <!-- end sidebar content -->
+        
+        
+        <!-- start of body content -->
+        <div class="info-content">
+        	<div class="new-patient">
+                <h2>Becoming a New Patient</h2>
+                <p>Third Coast Family Practice accepts a limited number of new patients each month.  Click <a href="forms/new-patient.doc">here</a> to learn more about the process of becoming a new patient.  Click <a href="forms/new-patient.doc">here</a> to view and print the New Patient Application, to be completed and brought to our office.</p>
+                <br />
+            </div>
+            <div class="prep">
+            <h2>Preparing for Your Visit</h2>
+			<p>Please bring the following items to every visit:</p>
+            <ul>
+				<li>Insurance card and photo ID</li>
+				<li>Any supplements and/or medications prescribed by a physician other than Dr. Matheson IN THEIR ORIGINAL CONTAINERS</li>
+				<li>A list of questions you want to discuss with Dr. Matheson</li>
+				<li>Forms you need completed by the doctor</li>
+				<li>Copayment</li>
+            </ul>
+			<p>You may also choose to bring:</p>
+            <ul>
+				<li>Diaries (food, blood pressure readings, symptom diaries, etc.)</li>
+				<li>A trusted friend or family member who cares or advocates for you</li>
+            </ul>
+            </div>
+            <div class="chart">
+            	<h2>Keeping Your Medical Chart Up-to-Date</h2> 
+				<p>At least once per year, we will ask you to:</p>
+                <ul>
+				<li>Verify your demographic information</li>
+                <li>make sure we have your permission to treat you</li>
+                <li>give us permission to obtain copies of your medical records from other providers when needed</li>
+                <li>verify who, if anyone, can we speak to about your medical chart.
+You can update this information anytime by printing the form provided <a href="#">here</a> and bringing it to the office.</li>
+				</ul>
+            </div>
+            <div class="privacy">
+            	<h2>Ensuring Your Privacy</h2>
+				<p>To view our Notice of Privacy Practice, click <a href="#">here</a>.  To request a copy of your medical record be sent to another provider, please fill out the <a href="#">Release of Information Form</a> and turn it into the office.</p>
+            </div>
+            <div class="portal">
+            	<h2>Patient Portal</h2>
+				<p>All patients have access to a secure Patient Portal, located at <a href="https://health.eclinicalworks.com/thirdcoastfamily">https://health.eclinicalworks.com/thirdcoastfamily</a>.  Just ask any staff member to provide you with a username and password.  When you log into your Portal, you will be able to see test results, summaries of your visits with Dr. Matheson including your current medication list,  and education materials selected for you by Dr. Matheson.  You can use the portal to contact us to request an appointment or ask a question.   The Portal is also the best way to request prescription refills.</p>
+            </div>
         
         </div>
-  		</div>
+        
+        
+        
+        
+        
+    </div>
+        		
     
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

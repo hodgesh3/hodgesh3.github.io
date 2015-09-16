@@ -293,9 +293,6 @@ body{
 .wrapper{
 	width:100%;
 	height:100%;
-	padding:0;
-	margin-bottom:5%;
-	position:relative;
 	}
 .wrapper .sidebar{
 	width:278px;
@@ -415,7 +412,7 @@ body{
 	
 	}
 .wrapper .care-sidebar h2{
-	text-align:center;;
+	text-align:center;
 	}
 .wrapper .care-sidebar p{
 	text-align:center;
@@ -433,7 +430,10 @@ body{
 	z-index: 0;
 	padding-bottom:15px;
 	}
-.wrapper .care-content h1, h2{
+.wrapper .care-content h1{
+	color:#7691c0;
+	}
+.wrapper .care-content h2{
 	color:#7691C0
 	}
 .wrapper .care-content .appointments{
@@ -452,6 +452,66 @@ body{
 	margin-right:10%;
 	}
 
+.wrapper .info-sidebar{
+	width:278px;
+	height:1243px;
+	position:absolute;
+	padding-top:231px;
+	background:#7089ba;
+	z-index: 1;
+	color:white;
+	
+	}
+.wrapper .info-sidebar h2{
+	text-align:center;
+	}
+.wrapper .info-sidebar p{
+	text-align:center;
+	margin-left:5%;
+	margin-right:5%;
+	}
+
+.wrapper .info-content {
+	padding:0;
+	margin:0;
+	padding-top:251px;
+	background:white;
+	margin-left:25%;
+	width:75%;
+	z-index: 0;
+	padding-bottom:15px;
+	}
+.wrapper .info-content h1{
+	color:#7691c0;
+	}
+.wrapper .info-content h2{
+	color:#7691C0
+	}
+.wrapper .info-content .new-patient{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
+.wrapper .info-content .prep{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
+.wrapper .info-content .chart{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
+.wrapper .info-content .privacy{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
+.wrapper .info-content .portal{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
 
 
 
