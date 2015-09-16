@@ -107,6 +107,7 @@ body{
   margin:0px auto;
   background-color:#ffffff;
   line-height:1.5em;
+  margin-bottom:20px;
 }
 
 .head{
@@ -240,6 +241,23 @@ body{
 		   display:block;
 		   }
 	   .head .nav ul ul.home-menu li{
+		   width:100%;
+		   display:block;
+		   }
+		.head .nav ul li ul.care-menu{
+		  list-style:none;
+		  min-width:200px;
+		  display:none;
+		  position:absolute;
+		  z-index:999;
+		  left:0;
+		  }
+	   .head .nav ul li:hover ul.care-menu{
+		   width:33.33%;
+		   margin-left:33.33%;
+		   display:block;
+		   }
+	   .head .nav ul ul.care-menu li{
 		   width:100%;
 		   display:block;
 		   }
@@ -386,7 +404,51 @@ body{
 	margin-left:10%;
 	margin-right:10%;
 	}
+.wrapper .care-sidebar{
+	width:278px;
+	height:1216px;
+	position:absolute;
+	padding-top:231px;
+	background:#7089ba;
+	z-index: 1;
+	color:white;
+	
+	}
+.wrapper .care-sidebar h2{
+	text-align:center;
+	}
+.wrapper .care-sidebar p{
+	text-align:center;
+	margin-left:5%;
+	margin-right:5%;
+	}
 
+.wrapper .care-content {
+	padding:0;
+	margin:0;
+	padding-top:281px;
+	background:white;
+	margin-left:25%;
+	width:75%;
+	z-index: 0;
+	padding-bottom:15px;
+	
+	}
+.wrapper .care-content .appointments{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
+.wrapper .care-content .prescription{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
+.wrapper .care-content .urgent{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	}
 
 
 

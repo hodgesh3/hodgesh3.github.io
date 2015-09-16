@@ -20,41 +20,68 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header id="nav-menu">
+    
+    <!-- header content -->
+    
       <div class="head">
+      
+        <!-- link to patient portal -->
+      
       	<div class="portal-link">
         	<a href="#">Patient Portal</a>
         </div>
+        
+        <!-- logo image in the header -->
         <div class="logo-holder">
         	<img src="img/logo.jpg" id="logo" alt="logo" />
         </div>
         
-      	<div class="nav">
+      	<div class="nav"> <!-- navigation bar -->
           <ul>
-            <li class="current">
+            <li class="deselected"> <!-- highligts link when clicked -->
             	<a href="index.html">Home</a>
+                <!-- homepage dropdown on hover menu -->
+                <!-- links lead to homepage if on another part of site -->
                 <ul class="home-menu">
-                	<li><a href="#third-coast">Third Coast</a></li>
-                    <li><a href="#doctor">About Dr. Matheson</a></li>
-                    <li><a href="#patient">Patient Centered</a></li>
-                    <li><a href="#services">Services Provided</a></li>
-                    <li><a href="#insurances">Participating Insurance</a></li>
-                    <li><a href="#options">Payment Options</a></li>
+                	<li><a href="index.html">Third Coast</a></li>
+                    <li><a href="index.html">About Dr. Matheson</a></li>
+                    <li><a href="index.html">Patient Centered</a></li>
+                    <li><a href="index.html">Services Provided</a></li>
+                    <li><a href="index.html">Participating Insurance</a></li>
+                    <li><a href="index.html">Payment Options</a></li>
                 </ul>
             </li>
-            <li class="deselected"><a href="#">Accessing Care</a></li>
-            <li class="deselected"><a href="#">Information</a></li>
+            
+            <li class="current">
+            	<a href="care.html">Accessing Care</a>
+                
+                <ul class="care-menu">
+                	<li><a href="#appoint">Appointments</a></li>
+                    <li><a href="#prescrip">Prescriptions</a></li>
+                    <li><a href="#urgent">Urgent Care</a></li>
+                </ul>
+                
+            </li>
+            <li class="deselected"><a href="info.html">Information</a></li>
           </ul>
-  		</div>
-      </div> 
+  		</div> <!-- end nav bar -->
+      </div> <!-- end header --> 
     </header>
-    <a name="third-coast"></a>
-    <div class="wrapper">
-		<div class="sidebar">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62936.62734687174!2d-86.3571220687452!3d43.932698227144506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d2621d0a9a13c64!2sThird+Coast+Family+Practice!5e0!3m2!1sen!2sus!4v1442347947135" width="278" height="275" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <div class="wrapper"> <!-- sidebar/body formatting purposes -->
+    
+    <!-- sidebar content -->
+    
+		<div class="care-sidebar">
+  <!-- embedded map can edit by changing values below starting with width-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62936.62734687174!2d-86.3571220687452!3d43.932698227144506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d2621d0a9a13c64!2sThird+Coast+Family+Practice!5e0!3m2!1sen!2sus!4v1442347947135" width="278" height="285" frameborder="0" style="border:0" allowfullscreen></iframe>	<!-- end embedded map -->
+            
             <p>821 West US 10 Scottville, MI 49454</p>
             <h2>Emergencies</h2>
             <p>If you have an urgent medical problem after hours or on the weekend, you can page Dr. Matheson by dialing (231) 843-2557. In case of an acute emergency, go to your nearest hospital Emergency Department. For help deciding the urgency of your situation, <a href="#">click here</a>.</p>
-            <br />
+            
+            <br /> <!-- line break for formatting purposes -->
+            
             <h2>Office Hours</h2>
             <p>Mon-Tue 8:15am-5:00pm</p>
             <p>Wed 12:00-7:30pm</p>
@@ -64,110 +91,51 @@
     		<h2>Contact</h2>
             <p><em>Phone</em> (231) 757-2500</p>
             <p><em>Fax</em> (231) 757-9073</p>
-        </div>
-        <div id="home-markup">
-        		<div class="intro-holder">
-        			<div class="img-holder">
-    					<img src="img/CRAIG MATHESON, DO.jpg" id="headshot" alt="Dr. Matheson Headshot" />
-        				<div class="caption">
-                        	<em>Dr. Craig Matheson, D.O.</em>
-                        </div>
-                	</div>
-        			<div class="intro">
-                    	<a name="doctor"></a>
-        				<h1>Third Coast</h1>
-        					<p>Family Practice was established in 2004 by Dr. Craig Matheson.  He and the Staff of Third Coast Family Practice are committed to caring for whole families at every stage of life.  Building relationships with our patients allows us to understand their health histories, goals, and challenges.  As your Primary Care Provider, we are the hub that connects all your health care interactions to coordinate and help you make choices about your health maintenance or disease management.  </p>
-                    </div>
-        		</div>
-            <br />
-            <div class="about">
-                <h2>About Dr. Matheson</h2>
-                    <ul class="bio">
-                        <li>Doctor of Osteopathy, 1987, Chicago College of Osteopathic Medicine. Internship, 1988, Chicago Osteopathic Hospital</li>
-                        <li>Family Practice Residency, 1988 - 1991, Christ Hospital, Chicago, Illinois</li>
-                        <li>American Academy of Family Pracice, Board Certified 1991; recertification 1997, 2003 & 2011</li>
-                        <a name="patient"></a>
-                        <li>Private practice in Michigan since 1991</li>
-                        <li>AMA Certified EPEC Trainer, (Education fo Physicians on End-of-Life Care) 1999</li>
-                        <li>Member of CHADD (Children with Hyperactivity Attention Deficit Disorder)</li>
-                        <li>Board of Directors, Physician Organization of West Michigan</li>
-                        <li>Certified Medical Examiner, Federal Motor Carrier Safety Administration</li>
-                    </ul>
-                <br />
-    		</div>
+            
+        </div> <!-- end sidebar content -->
         
-        <div class="list">
-        <h2>Patient Centered Medical Home</h2>
-        <p>Patient Centered Medical Home
-In 2012, Blue Cross Blue Shield of Michigan designated Third Coast Family Practice as a Patient Centered Medical Home.  They have re-affirmed this designation annually for the past 4 years.  A Patient Centered Medical Home (PCMH) is a national model of care that commits to tenants of high quality such as:</p>
-			<a name="services"></a>
-        	<ul>
-            	<li>being accessible when patients need you</li>
-                <li>monitoring and improving the quality of care delivered for individual patients and for groups of patients with serious conditions such as diabetes</li>
-                <li>proactively tracking and communicating results of tests or consultations</li>
-                <li>serving as a resource for patients with education and links to community resources</li>
+        
+        <!-- start of body content -->
+        <a name="appoint"></a>
+        <div class="care-content">
+        <div class="appointments">
+        	<h2>Scheduling Appointments</h2>
+            <p><em>Routine Appointments</em> like annual check-ups, DOT physicals, and follow-up visits can all be scheduled in advance by calling our office or sending us a request through the patient portal.</p>
+            <p><em>New Patient Appointments</em>  will be scheduled once we have your past medical records.  For details about this process and the forms necessary to establish as a new patient, click <a href="#">here</a>.</p>
+            <p><em>Same Day Appointments</em> are available to established patients because illness and injury cannot be anticipated.  Thirty percent of our appointment slots are reserved for same day scheduling, so give us a call when you need us.  <em>These slots fill up quickly, so call as early in the day as possible!</em></p>
+            <a name="prescrip"></a>
+            <p><em>After a Hospitalization</em> For a smooth transition after a hospitalization or nursing home rehabilitation, Dr. Matheson would like to see you within 7 days of your discharge.  We reserve time in our schedule for these appointments as well, so please contact us when you are discharged to home.</p>
+            <p>No appointment necessary for:</p>
+            	<ul>
+                	<li>Routine injections such as allergy shots, vitamin B12 or testosterone injections, flu and pneumonia shots, or TB tests.</li>
+                	<li>PT/INR lab test for anti-coagulation management</li>
+                    <li>Blood Pressure checks or urinalysis</li>
                 </ul>
-                <p>To learn more about how we implement this model of care at Third Coast Family Practice, click here</p>
-                </div>
-                <br />
-    <div class="new-patients">
-    	<br />
-    	<h2>Services Provided</h2>
-        <ul>
-            	<li>Primary Care that promotes wellness and treats illness for persons of all ages</li>
-                <li>Hospice and Palliative Care</li>
-                <li>ADD/ADHD evaluation and treatment</li>
-                <li>Women's health including contraceptive counseling and gynecological health</li>
-                <a name="insurances"></a>
-                <li>Men's health including complete preventative exams and prostate health</li>
-                <li>Evaluation and treatment of anxiety and depression</li>
-                <li>Treatment of acne, removal of warts and other skin lesions</li>
-                <li>Minor surgical procedures including treatment of lacerations</li>
-                <li>Coordination of care with physicians of other specialists</li>
-                <li>Electrocardiograms and Pulmonary function tests</li>
-                <li>Injections and immunizations including allergy shots</li>
-                <li>Lab tests for managing diabetes and anticoagulation therapy</li>
-                <li>RN Chronic Care Manager (to enroll in these services click <a href="#">here</a></li>
-                </ul>
-             </div>
-             
-             <div class="insurance">
-             	<h2>Participating Insurances</h2>
-                <em>Medicare</em>
-                <ul>
-                	<li>Medicare (Part B)</li>
-                    <li>Medicare Plus Blue (BCBS Medicare Advantage</li>
-                    <li>Priority Health Medicare</li>
-                    <li>Humana Gold Choice</li>
-                    <li>Railroad Medicare/Palmetto GBA</li>
-                </ul>
-             	<em>Medicaid</em>
-               	<ul>
-                	<li>Straight Medicaid</li>
-                    <li>Meridian</li>
-               	</ul>
-                <a name="options"></a>
-              	<em>Commercial Products</em>
-                <ul>
-                	<li>Medicare (Part B)</li>
-                    <li>BCN (not Partnered Plan- Mercy Network)</li>
-                    <li>BCBS</li>
-                    <li>Priority Health</li>
-                    <li>Cofinity Network</li>
-                    <li>ASR</li>
-                    <li>Multiplan Network</li>
-                    <li>PHCS Network</li>
-                    <li>United Health Care - Core Network Only</li>
-                </ul>
-             </div>
-             <br />
-             
-             <div class="payment">
-             	<h2>Payment Options</h2>
-                <p>New patients are encouraged to contact our office to verify that your insurance plan covers Dr. Matheson’s services.  Co-payments are expected the day of service and we accept Master Card, Visa and Discover cards.  Patients who do not have insurance coverage for office visits will receive a discount if  payment in full is received on the day of service.  To review our Financial Policy, click <a href="a">here</a>.</p>
-             </div>
         </div>
-  		</div>
+        
+        <div class="prescription">
+        <h2>Prescription Refills</h2>
+        <p>Please contact your pharmacy when you need refills; if your prescription is due to be renewed, they will send us an electronic request.  Or, send a request via the Patient Portal to refill your prescription.</p>
+        </div>
+		<a name="urgent"></a>
+        <div class="urgent">
+        <h2>URGENT CARE</h2>
+		<p>You may not always know if it is better to go to a hospital emergency department, urgent care center, or if you should contact Dr. Matheson first.  Here are some guidelines to help you navigate that decision.
+
+Whenever you need health care, please call our office first (231-757-2500).  If the office is open we can help by either scheduling you to be seen that day, or by providing triage and treatment recommendations over the phone.  If the office is closed, a recorded message will give you instructions including how to get in touch with us after hours so that we can make a decision together about whether or not you need to go to the hospital. (The after-hours call center is 231-843-2557.  They will page Dr. Matheson and he will call you back.)
+
+The only time we would not want you to call the office first, is if the circumstances require a call to 911 so that an ambulance can attend to you immediately.   Examples of this type of circumstance would be:  symptoms of a stroke or heart attack, loss of consciousness, trauma resulting in uncontrolled bleeding or inability to walk.</p>
+
+        </div>
+        
+        </div>
+        
+        
+        
+        
+        
+    </div>
+        		
     
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
