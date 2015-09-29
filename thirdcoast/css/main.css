@@ -103,7 +103,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-  width:960px;
+  width:1200px;
   margin:0px auto;
   background-color:#ffffff;
   line-height:1.5em;
@@ -126,11 +126,20 @@ body{
 .head #logo{
 		width:50%;
 		height:auto;
+		float:left;
 		margin-left:5%;
 		margin-right:5%;
 		padding-top:15px;
 		padding-bottom:15px;
 	  }
+.head #pmhc{
+	width:250px;
+	float:right;
+	margin:0;
+	padding:0;
+	margin-top:65px;
+	margin-right:20px;
+	}
 .head .portal-link{
 	display:block;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e20447+1,db3030+28,db3030+50,ce7987+93,ce7584+100 */
@@ -164,51 +173,6 @@ body{
 	z-index: 1;
 }
 
-.head .nav ul {
-  width:100%;
-  list-style: none;
-  background-color: #fff;
-  text-align: center;
-  margin:0 auto;
-  padding:0;
-  z-index: 1;
-}
-
-.head .nav li {
-  font-size: 1.2em;
-  text-align: center;
-  border-bottom:1px solid black;
-  background: #8a0b26;
-  z-index: 1;
-
-}
-
-.head .nav a {
-  text-decoration: none;
-  color: #dbe0ee;
-  display: block;
-  height:70%;
-  z-index: 1;
-}
-
-.head .nav a:hover {
-	background: #7089ba;
-}
-
-.head .nav ul li a .current{
-	background: #7089ba;
-	z-index: 1;
-
-	}
-	
-.head .nav ul li a .deselected{
-
-	background: #8a0b26;
-
-
-	}
-
-@media screen and (min-width: 540px) {
 	.head img{
 		display:block;
 		width:80%;
@@ -217,14 +181,27 @@ body{
 		margin:0 auto;
 	}
 	
+	.head .nav ul {
+	  width:100%;
+	  list-style: none;
+	  background-color: #fff;
+	  text-align: center;
+	  margin:0 auto;
+	  padding:0;
+	  z-index: 1;
+	  clear:both;
+	}
+		
 	.head .nav ul li {
+		font-size: 1.2em;
+  		text-align: center;
+  		border-bottom:1px solid black;
+  		background: #8a0b26;
 		padding:0;
 		margin:0;
 		width:33.33%;
 		height:40px;
 		float:left;
-		border-bottom: none;
-		font-size: 1.2em;
 		display: inline-block;
 		z-index: 1;
 	  }
@@ -284,14 +261,27 @@ body{
 		margin:0;
 		padding-top:6px;
 		padding-bottom:6px;
-		z-index: 1;
-	  }
+  		text-decoration: none;
+  		color: #dbe0ee;
+  		display: block;
+  		height:70%;
+  		z-index: 1;
+	}
 	
 	.head .nav  ul  li {
 		text-align: center;
 		background: #8a0b26;
 		z-index: 1;
 	  }
+	.head .nav .home-menu li {
+		font-size:16px;
+		}
+	.head .nav .care-menu li {
+		font-size:16px;
+		}
+	.head .nav .info-menu li {
+		font-size:16px
+		}
 	
 	.head .nav  ul  li  a {
 		padding-left: 0;
@@ -299,11 +289,19 @@ body{
 	  }
 	.head .nav ul li a .current{
 		background: #7089ba;
+		z-index: 1;
 		}
+	.head .nav a:hover {
+		background: #7089ba;
+	}
+
 	.head .nav ul li .current{
 		background: #7089ba;
 		}
-}
+	.head .nav ul li a .deselected{
+		background: #8a0b26;
+		}
+
 
 /* body formatting */
 
@@ -312,10 +310,13 @@ body{
 	height:100%;
 	}
 .wrapper .sidebar{
-	width:278px;
-	height:2337px;
-	position:absolute;
-	padding-top:231px;
+	top:0;
+	bottom:0;
+	width:240px;
+	position:fixed;
+	margin-left:960px;
+	overflow-y:scroll;
+	overflow-x:hidden;
 	background:#7089ba;
 	z-index: 0;
 	color:white;
@@ -330,9 +331,9 @@ body{
 	}
 .wrapper #home-markup{
 	padding-bottom:20px;
+	margin-right:20%;
 	text-align:justify;
 	background:white;
-	margin-left:25%;
 	padding-top:281px;
 	}
 .wrapper #home-markup h1{
@@ -355,6 +356,7 @@ body{
 	}
 .wrapper #home-markup .intro-holder{
 	text-align:justify;
+	margin-bottom:30px;
 	}
 .wrapper #home-markup .img-holder{
 	float:right;
@@ -363,11 +365,24 @@ body{
 	}
 	
 .wrapper #home-markup .img-holder #headshot{
-	width:60%;
+	width:80%;
 	height:auto;
 	margin-left:50px;
 	margin-right:20px;
 	}
+.wrapper #home-markup .about .img-holder2{
+	width:200px;
+	margin-right:40px;
+	}
+.wrapper #home-markup .about .img-holder2 img{
+	width:250px;
+	padding:20px;
+	padding-top:40px;
+	padding-bottom:30px;
+	margin-right:40px;
+	margin-left:20px;
+	float:left;
+	}	
 	
 .wrapper #home-markup .caption{
 	margin-left:50px;
@@ -389,7 +404,9 @@ body{
 .wrapper #home-markup .about{
 	text-align:left;
 	margin-left:10%;
-	margin-right:10%;
+	margin-right:5%;
+	margin-bottom:0;
+	padding-bottom:0;
 	}
 .wrapper #home-markup .bio{
 	margin-left:10%;
@@ -397,9 +414,10 @@ body{
 	text-align:left;
 	}
 .wrapper #home-markup .new-patients{
+	margin-top:0;
+	padding-top:0;
 	margin-left:10%;
 	margin-right:10%;
-	margin-top:20px;
 	text-align:justify;
 	clear:both;
 	}
@@ -419,12 +437,15 @@ body{
 	margin-right:10%;
 	}
 .wrapper .care-sidebar{
-	width:278px;
-	height:1216px;
-	position:absolute;
-	padding-top:231px;
+	top:0;
+	bottom:0;
+	width:240px;
+	position:fixed;
+	margin-left:960px;
+	overflow-y:scroll;
+	overflow-x:hidden;
 	background:#7089ba;
-	z-index: 1;
+	z-index: 0;
 	color:white;
 	
 	}
@@ -442,7 +463,7 @@ body{
 	margin:0;
 	padding-top:281px;
 	background:white;
-	margin-left:25%;
+	margin-right:20%;
 	width:75%;
 	z-index: 0;
 	padding-bottom:15px;
@@ -470,14 +491,16 @@ body{
 	}
 
 .wrapper .info-sidebar{
-	width:278px;
-	height:1243px;
-	position:absolute;
-	padding-top:231px;
+	top:0;
+	bottom:0;
+	width:240px;
+	position:fixed;
+	margin-left:960px;
+	overflow-y:scroll;
+	overflow-x:hidden;
 	background:#7089ba;
-	z-index: 1;
+	z-index: 0;
 	color:white;
-	
 	}
 .wrapper .info-sidebar h2{
 	text-align:center;
@@ -493,7 +516,7 @@ body{
 	margin:0;
 	padding-top:251px;
 	background:white;
-	margin-left:25%;
+	margin-right:20%;
 	width:75%;
 	z-index: 0;
 	padding-bottom:15px;
