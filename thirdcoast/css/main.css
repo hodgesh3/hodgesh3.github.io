@@ -437,8 +437,8 @@ body{
 	margin-right:10%;
 	}
 .wrapper .care-sidebar{
-	top:0;
-	bottom:0;
+	top:5px;
+	bottom:5px;
 	width:240px;
 	position:fixed;
 	margin-left:960px;
@@ -491,8 +491,8 @@ body{
 	}
 
 .wrapper .info-sidebar{
-	top:0;
-	bottom:0;
+	top:5px;
+	bottom:5px;
 	width:240px;
 	position:fixed;
 	margin-left:960px;
