@@ -310,9 +310,9 @@ body{
 	height:100%;
 	}
 .wrapper .sidebar{
-	top:0;
-	bottom:0;
-	width:240px;
+	top:5px;
+	bottom:5px;
+	width:241px;
 	position:fixed;
 	margin-left:960px;
 	overflow-y:scroll;
